@@ -1,0 +1,15 @@
+# Java
+/target
+*.class
+*.log
+*.iml
+.idea/
+
+# Node / React
+node_modules/
+build/
+.env
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
