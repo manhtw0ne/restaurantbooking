@@ -5,52 +5,23 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data // tạo tự động getter/setter/toString/equals/hashCode
+@NoArgsConstructor // tạo constructor không có tham số
+@AllArgsConstructor // tạo constructor có tất cả tham số
 @Entity
+
 public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String customerName;
     private String date;
+    private String time;
     private int numberOfPeople;
-
-    // Constructors
-    public Booking() {}
-
-    public Booking(String customerName, String date, int numberOfPeople) {
-        this.customerName = customerName;
-        this.date = date;
-        this.numberOfPeople = numberOfPeople;
-    }
-
-    // Getters và Setters
-    public Long getId() {
-        return id;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public int getNumberOfPeople() {
-        return numberOfPeople;
-    }
-
-    public void setNumberOfPeople(int numberOfPeople) {
-        this.numberOfPeople = numberOfPeople;
-    }
 }

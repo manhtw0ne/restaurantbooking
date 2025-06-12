@@ -1,4 +1,10 @@
-com\example\restaurantbooking\model\Booking.class
+com\example\restaurantbooking\model\User.class
 com\example\restaurantbooking\RestaurantBookingApplication.class
+com\example\restaurantbooking\BookingRepository.class
+com\example\restaurantbooking\config\SecurityConfig.class
 com\example\restaurantbooking\controller\BookingController.class
 com\example\restaurantbooking\HelloController.class
+com\example\restaurantbooking\config\WebConfig.class
+com\example\restaurantbooking\model\Booking.class
+com\example\restaurantbooking\UserRepository.class
+com\example\restaurantbooking\model\Role.class
